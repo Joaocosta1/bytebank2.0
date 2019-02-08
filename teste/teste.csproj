@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1F75249E-020F-44EB-AF1B-5D7DD96D0700}</ProjectGuid>
+    <ProjectGuid>{DC3AAA22-12BD-4A3C-9CE3-E1BD4A606CE5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ByteBank</RootNamespace>
-    <AssemblyName>ByteBank</AssemblyName>
+    <RootNamespace>teste</RootNamespace>
+    <AssemblyName>teste</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -42,21 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Funcionarios\Auxiliar.cs" />
-    <Compile Include="Funcionarios\Desenvolvedor.cs" />
-    <Compile Include="Funcionarios\Designer.cs" />
-    <Compile Include="Funcionarios\Diretor.cs" />
-    <Compile Include="Funcionarios\Funcionario.cs" />
-    <Compile Include="Funcionarios\GerenteDeConta.cs" />
-    <Compile Include="GerenciadorBonificacao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
